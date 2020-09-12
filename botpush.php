@@ -13,7 +13,7 @@ $pushID = 'U3b9c029b62ffcbd570544804bf9bdb03';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('Test Bot Push : www.google.com');
 $textMessageBuilder2 = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder('https://i.ibb.co/1b3rLxp/Big.jpg','https://i.ibb.co/H76BpJv/small.jpg');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 $response = $bot->pushMessage($pushID, $textMessageBuilder2);
