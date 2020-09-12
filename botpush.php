@@ -14,7 +14,7 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world');
-$textMessageBuilder2 = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder('https://i.ibb.co/f1PJTJS/dcaomcl-2f817246-54d1-46a1-b381-1d146b52082b.jpg','https://i.ibb.co/f1PJTJS/dcaomcl-2f817246-54d1-46a1-b381-1d146b52082b.jpg');
+$textMessageBuilder2 = new \LINE\LINEBot\MessageBuilder\ImageMessageBuilder('https://i.ibb.co/1b3rLxp/Big.jpg','https://i.ibb.co/H76BpJv/small.jpg');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 $response = $bot->pushMessage($pushID, $textMessageBuilder2);
 
